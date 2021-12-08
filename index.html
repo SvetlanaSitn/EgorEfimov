@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+    <style>
+        #draggable { width: 150px; height: 150px; padding: 0.5em; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#draggable" ).draggable();
+        } );
+            $( function() {
+        $( "#dialog" ).dialog();
+    } );
+    </script>
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
+</head>
+<body>
+    <div id="dialog" title="Basic dialog">
+        <a href="https://ru.wikipedia.org/wiki/Tesla">Tesla</a><br>
+        <a href="https://ru.wikipedia.org/wiki/SpaceX">SpaceX</a>
+      </div>
+    <div class="container">
+        <div class="navigat"><h1></h1><!-- <img src="img\Logo.svg" wigth="10px"> --></div>
+        <header>
+            <h2>
+              Достижения Илона Маска
+            </h2>
+        </header>
+        <div class="row wrapper">
+            <main class="col main"><p>Илон Рив Маск (англ. Elon Reeve Musk, род. 28 июня 1971, Претория, ЮАР) — американский предприниматель, инженер и миллиардер.<br>
+                Основатель, совладелец, генеральный директор и главный инженер компании SpaceX; генеральный директор и главный идейный вдохновитель (Chief Product Architect) компании Tesla;<br>
+                также был членом совета директоров компании SolarCity, основанной его двоюродными братьями, до её слияния с Tesla.<br>
+                За выдающиеся заслуги перед наукой 9 мая 2018 года удостоен членства Лондонского королевского общества.<br>
+                7 января 2021 года, с состоянием по оценочным данным в 185 млрд $,<br>
+                впервые стал богатейшим человеком планеты, сместив на второе место основателя Amazon Джеффа Безоса.<br>
+                1 ноября 2021 года стал первым человеком в истории, чьё состояние достигло отметки в 300 млрд $.</p><br>
+            <div id="draggable" class="ui-widget-content">
+                <img src="img\2.jpg">
+            </div>    
+            </main>
+            <div class="col ads"><img src="img\1.jpg" height="300px"><h3>- Основатель Tesla, SpaceX -</h3></div>
+        </div>
+        <div id="accordion">
+            <h3>SpaceX</h3>
+            <div>
+              <p>
+                Space Exploration Technologies Corporation (SpaceX) — американская компания, производитель космической техники.<br>
+                Штаб-квартира — в городе Хоторне, Калифорния, США.<br>
+                Основана в 2002 году прежним акционером PayPal и CEO Tesla Motors Илоном Маском с целью сократить расходы на полёты в космос и для открытия пути к колонизации Марса.<br>
+                Компания разработала ракеты-носители Falcon 1, Falcon 9 и Falcon Heavy, с самого начала преследуя цель сделать их многоразовыми, и космический корабль Dragon (выводимый на орбиту теми же Falcon 9), предназначенный для пополнения запасов на Международной космической станции.<br>
+                30 мая 2020 года состоялся первый пилотируемый запуск пассажирской версии корабля Dragon V2, предназначенной для транспортировки астронавтов на МКС.<br>
+                С 2015 года участвует также в реализации проекта вакуумного поезда Hyperloop.<br>
+                С целью контроля над качеством и стоимостью разработки производство и испытания большинства компонентов продукции производятся с опорой на внутренние ресурсы, включая ракетные двигатели Merlin, Kestrel, Draco и SuperDraco, используемые на ракетах-носителях Falcon и корабле Dragon.
+              </p>
+            </div>
+            <h3>Tesla</h3>
+            <div>
+              <p>
+                Tesla (ранее Tesla Motors) — американская компания, производитель электромобилей и (через свой филиал SolarCity) решений для хранения электрической энергии.<br>
+                Компания была основана в июле 2003 года Мартином Эберхардом и Марком Тарпеннингом, но нынешнее руководство компании называют сооснователями Илона Маска, Джеффри Брайана Страубела и Иэна Райта.<br>
+                В 2019 году Tesla стала крупнейшим производителем электромобилей в мире. Седан Tesla Model 3 стал самым продаваемым электромобилем в истории, преодолев отметку 800 тысяч.<br>
+                В 2021 году Tesla вышла на первое место по капитализации среди автомобильных компаний, обойдя японского автопроизводителя Toyota.<br>
+                В конце октября 2021 года капитализация Tesla впервые превысила 1 трлн долларов, ранее этой отметки достигали только 4 американские компании (Apple, Microsoft, Amazon и Alphabet).<br>
+                Названа в честь всемирно известного электротехника и физика Николы Теслы.
+              </p>
+            </div>
+          </div>
+        <footer><p>- Vibe&Chill | Designed by Egor Efimov -</p></footer>
+        <div class="navigat">Q(`⌒´Q)</div>
+    </div>
+</body>
+</html>
